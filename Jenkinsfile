@@ -1,7 +1,7 @@
 pipeline {
 	agent any 
 	environment {
-		DOCKERHUB_PASS = credentials('swe645123')
+		DOCKERHUB_PASS = credentials(swe645123)
 	}
 	stages {
 		stage("Building student survey application image") {
