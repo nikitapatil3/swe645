@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Student Survey Form</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="./styles/style.css"/>
+</head>
+
+<body>
+    <header>
+        <span>George Mason University</span>
+    </header>
+    <div>
+        <section>
+            <h1>Student Survey Form</h1>
+            <form action="" method="post">
+                <fieldset>
+                    <legend>Student Personal Information</legend>
+                    <table>
+                        <tr>
+                            <td>
+                                <label>
+                                	First Name 
+                                	<span style="color:red;">*</span>
+                                </label>
+                            </td>
+                            <td>
+                                <input type="text" required/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>
+                                	Last Name
+                                	<span style="color:red;">*</span>
+                                </label>
+                            </td>
+                            <td>
+                                <input type="text" required/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>
+                                	Street Address
+                                	<span style="color:red;">*</span>
+                                </label>
+                            </td>
+                            <td>
+                                <input type="text" required/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>
+                                	City
+                                	<span style="color:red;">*</span>
+                                </label>
+                            </td>
+                            <td>
+                                <input type="text" required/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>
+                                	State
+                                	<span style="color:red;">*</span>
+                                </label>
+                            </td>
+                            <td>
+                                <input type="text" required/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>
+                                	Zip Code
+                                	<span style="color:red;">*</span>
+                                </label>
+                            </td>
+                            <td>
+                                <input type="text" required/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>
+                                	Telephone Number
+                                	<span style="color:red;">*</span>
+                                </label>
+                            </td>
+                            <td>
+                                <input type="text" required/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>
+                                	Email Address
+                                	<span style="color:red;">*</span>
+                                </label>
+                            </td>
+                            <td>
+                                <input type="text" required/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>
+                                	Survey Date
+                                	<span style="color:red;">*</span>
+                                </label>
+                            </td>
+                            <td>
+                                <input type="date" required/>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <fieldset>
+                    <legend>Student Feedback and Raffle Competition</legend>
+                    <table>
+                        <tr>
+                            <td>
+                                <label>What did you liked most about George Mason University Campus?</label>
+                            </td>
+                            <td>
+                                <input type="checkbox"/>Students
+                                <input type="checkbox"/>Location
+                                <input type="checkbox"/>Campus
+                                <input type="checkbox"/>Atmosphere
+                                <input type="checkbox"/>Dorm Rooms
+                                <input type="checkbox"/>Sports
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>
+                                	What interested you the most in George Mason University?
+                                </label>
+                            </td>
+                            <td>
+                                <input type="radio"/>Friends
+                                <input type="radio"/>Television
+                                <input type="radio"/>Internet
+                                <input type="radio"/>Other
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            	<label>
+                            		How likely would you recommend George Mason University to others?
+                            	</label>
+                            </td>
+                            <td>
+                                <select>
+                                    <option>--Select--</option>
+                                    <option>Very Likely</option>
+                                    <option>Likely</option>
+                                    <option>Unlikely</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>
+                               		Raffle (Chance to win a Movie Ticket)
+                               		Enter 10 Comma separated numbers ranging from 1 through 100
+                                </label>
+                            </td>
+                            <td>
+                                <input type="text"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>
+                                	Additional Comments
+                                </label>
+                            </td>
+                            <td>
+                                <textarea rows="2"></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <br/>
+                <input type="submit" value="Submit"/>
+                <input type="reset" value="Cancel"/>
+            </form>
+        </section>
+    </div>
+</body>
+</html>

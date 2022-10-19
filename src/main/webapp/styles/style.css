@@ -1,0 +1,23 @@
+h1 {
+    color: black;
+    border: 4px solid black;
+}
+
+label {
+	color: #123B22;
+	font-weight: bold;
+}
+
+table tr td {
+    padding: 7px;
+}
+
+header {
+	text-align: left;
+	padding: 25px;
+    background-color: #123B22;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+   
+}
