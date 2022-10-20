@@ -13,5 +13,12 @@ pipeline {
 				}
 			}
 		}
+		stage("Pushing Image to DockerHub") {
+			steps {
+				script {
+					sh 'docker push swe645nikita/studentsurvey645:0.2'
+				}
+			}
+		}
 	}
 }
