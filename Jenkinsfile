@@ -27,12 +27,5 @@ pipeline {
 				}
 			}
 		}
-		stage("Deploying to Rancher as a with Load Balancer") {
-                        steps {
-                                script {
-                                        sh 'kubectl set image deployment/swestudentsurvey-loadbalancer container-0=swe645nikita/studentsurvey645:0.4 -n studentsurvey645'
-                                }
-                        }
-                }
 	}
 }
