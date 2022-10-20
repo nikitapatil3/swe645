@@ -1,3 +1,3 @@
-FROM --platform=linux/amd64 tomcat:8.5.47-jdk8-openjdk
+FROM tomcat:9.0-jdk15
 
 COPY StudentSurvey.war /usr/local/tomcat/webapps
