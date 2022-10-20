@@ -23,7 +23,7 @@ pipeline {
 		stage("Deploying to Rancher as a Single pod") {
 			steps {
 				script {
-					sh 'kubectl set image deployment/studentsurvey-pipeline studentsurvey-pipeline=swe645nikita/studentsurvey645:0.2'
+					sh 'kubectl set image deployment/studentsurvey studentsurvey=swe645nikita/studentsurvey645:0.2'
 				}
 			}
 		}
