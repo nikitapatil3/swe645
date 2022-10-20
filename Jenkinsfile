@@ -9,21 +9,21 @@ pipeline {
 					sh 'jar -cvf StudentSurvey.war -C src/ .'
 					sh 'echo ${BUILD_TIMESTAMP}'
 					sh "docker login -u swe645nikita -p swe645123" 
-					def customImage = docker.build('swe645nikita/studentsurvey645:0.3')
+					def customImage = docker.build('swe645nikita/studentsurvey645:0.4')
 				}
 			}
 		}
 		stage("Pushing Image to DockerHub") {
 			steps {
 				script {
-					sh 'docker push swe645nikita/studentsurvey645:0.2'
+					sh 'docker push swe645nikita/studentsurvey645:0.4'
 				}
 			}
 		}
 		stage("Deploying to Rancher as a Single pod") {
 			steps {
 				script {
-					sh 'kubectl set image deployment/studentsurvey container-0=swe645nikita/studentsurvey645:0.3 -n studentsurvey645'
+					sh 'kubectl set image deployment/studentsurvey container-0=swe645nikita/studentsurvey645:0.4 -n studentsurvey645'
 				}
 			}
 		}
