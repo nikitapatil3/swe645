@@ -9,7 +9,7 @@ pipeline {
 					sh 'jar -cvf StudentSurvey.war -C src/ .'
 					sh 'echo ${BUILD_TIMESTAMP}'
 					sh "docker login -u swe645nikita -p swe645123" 
-					def customImage = docker.build("swe645nikita/studentsurvey645:${BUILD_TIMESTAMP}")
+					def customImage = docker.build('swe645nikita/studentsurvey645:${BUILD_TIMESTAMP}')
 				}
 			}
 		}
