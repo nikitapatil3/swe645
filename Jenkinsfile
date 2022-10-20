@@ -23,7 +23,7 @@ pipeline {
 		stage("Deploying to Rancher as a Single pod") {
 			steps {
 				script {
-					sh 'kubectl set image deployment/swestudentsurvey container-0=swe645nikita/studentsurvey645:${BUILD_TIMESTAMP} -n studentsurvey645'
+					sh 'kubectl set image deployment/studentsurvey container-0=swe645nikita/studentsurvey645:${BUILD_TIMESTAMP} -n studentsurvey645'
 				}
 			}
 		}
